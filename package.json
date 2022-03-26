@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-express-curd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baophung445/Nodejs-Blog.git"
+  },
+  "author": "baophung445@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baophung445/Nodejs-Blog/issues"
+  },
+  "homepage": "https://github.com/baophung445/Nodejs-Blog#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
