@@ -2,14 +2,11 @@ const Course = require("../models/Course");
 
 class SiteController {
   // [GET] /home
-  home(req, res) {
-    Course.find({}, function (err, course) {
-      if (!err) {
-        res.json(course);
-        return;
-      }
-      res.status(400).json({ error: "Error !!!" });
-    });
+  home(req, res, next) {
+    Course.find({})
+      .lean()
+      .then((course) => res.render("app", { course }))
+      .catch(next);
 
     // res.render("app");
   }
