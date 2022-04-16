@@ -7,8 +7,6 @@ class SiteController {
       .lean()
       .then((course) => res.render("app", { course }))
       .catch(next);
-
-    // res.render("app");
   }
 
   // [GET] /search
