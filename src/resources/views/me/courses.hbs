@@ -1,0 +1,28 @@
+<div class="container">
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each course}}
+        <tr>
+          <th scope="row ">{{@index}}</th>
+          <td>{{this.name}}</td>
+          <td>{{this.description}}</td>
+          <td class="d-flex"><a
+              href="/me/courses/{{this._id}}/edit"
+              class="mr-2 btn btn-primary"
+            >Sửa</a>
+            <a href="" class="btn btn-danger">Xóa</a>
+          </td>
+
+        </tr>
+
+      {{/each}}
+    </tbody>
+  </table></div>
