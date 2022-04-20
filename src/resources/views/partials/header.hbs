@@ -4,19 +4,20 @@
       src="https://static.fullstack.edu.vn/static/media/f8-icon.7ad2b161d5e80c87e516.png"
       style="border-radius: 6px;
     flex-shrink: 0;
-    height: 38px;
+    height: 30px;
     object-fit: contain;
-    width: 38px;
+    width: 30px;
      font-family: 'Montserrat'"
     />
-    <a class="navbar-brand ml-2" href="/">F8 Fullstack</a>
+    <a class="navbar-brand ml-2" href="/" style="font-weight: bold">F8 Fullstack</a>
 
     <div
       class="collapse navbar-collapse"
       id="navbarSupportedContent"
       style="justify-content: space-between; align-items: center;"
     >
-      <form class="form-inline my-2 my-lg-0">
+      <div></div>
+      {{! <form class="form-inline my-2 my-lg-0">
         <input
           class="form-control mr-sm-2"
           type="search"
@@ -27,7 +28,7 @@
           class="btn btn-outline-success my-2 my-sm-0"
           type="submit"
         >Search</button>
-      </form>
+      </form> }}
 
       <div
         class=""
@@ -57,7 +58,7 @@
               Bảo Phùng
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Đăng kí khóa học</a>
+              <a class="dropdown-item" href="/courses/create">Đăng kí khóa học</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/me/courses">Khóa học của tôi</a>
               <a class="dropdown-item" href="#">Bài viết của tôi</a>
