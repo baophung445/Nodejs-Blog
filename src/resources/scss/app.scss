@@ -23,3 +23,17 @@
     width: 28px;
 }
 
+.logo{
+  border-radius: 6px;
+  flex-shrink: 0;
+  height: 30px;
+  object-fit: contain;
+  width: 30px;
+   font-family: 'Montserrat'
+}
+
+.content-header{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
